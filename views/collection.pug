@@ -1,0 +1,23 @@
+extends layout
+block hero
+  section(class="section")
+    div(class="hero-image")
+      div(class="hero-text")
+        h1 #{title}
+
+block content
+  section(class="section")
+    div(class="container is-fluid")
+      div(class="columns")
+            div(class="column")
+            - var one = data[0];
+                img(src=data[0], alt="Beach Wallpaper")/
+            div(class="column")
+                img(src=data[1] alt="Beach Wallpaper")/
+            div(class="column")
+                img(src=data[2] alt="Beach Wallpaper")/
+            div(class="column")
+                img(src=data[3] alt="Beach Wallpaper")/
+
+block scripts
+  script(src='/javascripts/collection-tpl.js')

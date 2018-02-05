@@ -1,5 +1,26 @@
 extends layout
+block hero
+  section(class="section")
+    div(class="hero-image")
+      div(class="hero-text")
+        h1 #{title}
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section(class="section")
+    div(class="container is-fluid")
+      div(class="columns")
+        div(class="column")
+          img(src="./images/beach_tropics_sea_sand_1920x1080.jpg", alt="Beach Wallpaper" height="150" width="200")/
+        div(class="column")
+          img(src="./images/everest_mountain_sky_1920x1080.jpg", alt="Beach Wallpaper" height="150" width="200")/
+        div(class="column")
+          img(src="./images/mclaren_1920x1080.jpg", alt="Beach Wallpaper" height="150" width="200")/
+        div(class="column")
+          img(src="./images/paragliding_1920x1080.jpg", alt="Beach Wallpaper" height="150" width="200")/
+        div(class="column")
+          img(src="./images/sports_f1_2560x1600.jpg", alt="Beach Wallpaper" height="150" width="200")/
+        div(class="column")
+          img(src="./images/beach_tropics_sea_sand_1920x1080.jpg", alt="Beach Wallpaper" height="150" width="200")/
+
+block scripts
+  script(src='/javascripts/index-tpl.js')
